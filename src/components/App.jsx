@@ -15,7 +15,7 @@ export const App = () => {
   const [filter, setFilter] = useState('');
 
   useEffect(() => {
-    const currentContacts = JSON.parse(localStorage.getItem('contacts') ?? '')
+    const currentContacts = JSON.parse(localStorage.getItem('contacts')) ?? ''
     currentContacts && setContacts(currentContacts);
   }, [])
   useEffect(() => {
